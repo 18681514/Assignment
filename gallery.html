@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> Gallery | Bugzy Malone </title>
+<link rel="stylesheet" href="CSS\styles.css">
+<script src="JS\script.js"></script>
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="top" class="Header">
+
+<!-- Logo -->
+<picture>
+    <source media="(min-width: 801px)" srcset="Assets/BLogo.jpg">
+    <img src="Assets/Logo.jpg" alt="Bugzy Malone Logo" class="HeaderLogo">
+</picture>
+
+<!-- Title -->
+<h1 class="HeaderText">Bugzy Malone</h1>
+
+<!-- Social Media links -->
+	<div class="HeaderSocial">
+		<a href="https://www.facebook.com/thebugzymaloneshow" target="_blank">
+			<img class="ImgHover" src="Assets/Facebook.jpg" alt="Facebook">
+		</a>
+		<a href="https://twitter.com/thebugzymalone" target="_blank">
+			<img class="ImgHover" src="Assets/Twitter.jpg" alt="Twitter">
+		</a>
+		<a href="https://www.youtube.com/channel/UCLd_hRzn-yr9Nh73XNviNWg" target="_blank">
+			<img class="ImgHover" src="Assets/YouTube.jpg" alt="YouTube">
+		</a>
+		<a href="https://www.instagram.com/thebugzymalone/" target="_blank">
+			<img class="ImgHover" src="Assets/Instagram.jpg" alt="Instagram">
+		</a>
+	</div>
+</div>
+
+<!-- Navbar -->
+<nav class="Navbar">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="music.html">Music</a></li>
+  <li><a class="Active" href="gallery.html">Gallery</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="store.html">Merch</a></li>
+  <li class="Right"><a href="demo.html">DEMO</a></li>
+</ul>
+</nav>
+
+
+<div class="Bar">
+	<p> Photography from Tours and Events </p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- Images to be used in modal -->
+<div class="GalleryContainer">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery1.jpg" alt="Leeds Festival">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery2.jpg" alt="Reading Festival">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery3.jpg" alt="Wireless Festival">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery4.jpg" alt="Leeds Festival">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery5.jpg" alt="O2 Academy, Newcastle">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery6.jpg" alt="O2 Academy, Newcastle">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery7.jpg" alt="O2 Academy, Leicester">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery8.jpg" alt="Leeds Festival">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery9.jpg" alt="Leeds Festival">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery10.jpg" alt="Wireless Festival">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery11.jpg" alt="Reading Festival">
+	<img class="TargetImage GalleryImage" src="Assets/Gallery/Gallery12.jpg" alt="Reading Festival">
+</div>
+
+<!-- Modal Features -->
+<div id="TargetModal" class="ModalImage">
+
+  <!-- Close Modal -->
+  <span class="CloseModal" onclick="document.getElementById('TargetModal').style.display='none'">&times;
+  </span>
+
+  <!-- Modal Image -->
+  <img class="ModalContent" id="GalleryImg">
+
+  <!-- Modal Text -->
+  <div id="ModalText">
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div class="Footer">
+	<a href="#top">
+		<img class="FooterLogo ImgHover" src="Assets/FooterLogo.jpg"/>
+	</a>	
+	<a href="about.html">About Page</a>
+	
+	<div class="FooterSocial">
+		<a href="https://www.facebook.com/thebugzymaloneshow" target="_blank">
+			<img class="ImgHover" src="Assets/Facebook.jpg" alt="Facebook">
+		</a>
+		<a href="https://twitter.com/thebugzymalone" target="_blank">
+			<img class="ImgHover" src="Assets/Twitter.jpg" alt="Twitter">
+		</a>
+		<a href="https://www.youtube.com/channel/UCLd_hRzn-yr9Nh73XNviNWg" target="_blank">
+			<img class="ImgHover" src="Assets/YouTube.jpg" alt="YouTube">
+		</a>
+		<a href="https://www.instagram.com/thebugzymalone/" target="_blank">
+			<img class="ImgHover" src="Assets/Instagram.jpg" alt="Instagram">
+		</a>
+	</div>
+	
+	<p class="SmallText"> Copyright © 2019 Bugzy Malone. </p>
+	<p class="SmallText"> A Website Made by Myles Threader </p>
+	
+</div>
+
+<script>
+
+// Get the Target Modal
+var TargetModal = document.getElementById('TargetModal');
+
+// Get the target image to be used in the modal and use the alt tag as the text
+var Image = $('.TargetImage');
+var ModalImage = $("#GalleryImg");
+var Text = document.getElementById("ModalText");
+$('.TargetImage').click(function(){
+    TargetModal.style.display = "block";
+    var NewImage = this.src;
+    ModalImage.attr('src', NewImage);
+    Text.innerHTML = this.alt;
+});
+
+// Get the span element to close the modal
+var Close = document.getElementsByClassName("CloseModal")[0];
+
+// Function to close the modal
+Close.onclick = function() {
+  TargetModal.style.display = "none";
+}
+</script>
+
+</body>
+
+</html>
