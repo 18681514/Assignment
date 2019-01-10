@@ -32,6 +32,7 @@ body {
 @media screen and (max-width: 800px) {
 .HeaderLogo {
     top: 45px;
+    left: 0px;
     width: 180px;
   }
 }
@@ -530,7 +531,7 @@ tr:nth-child(even) {
 /* Adjust font size with screen size */
 @media screen and (max-width: 938px) {
   .Events {
-    font-size: 73%;
+    font-size: 70%;
   }
 }
 
