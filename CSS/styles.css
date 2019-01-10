@@ -31,8 +31,8 @@ body {
 /* Adjust Header Logo size when below width 800px */
 @media screen and (max-width: 800px) {
 .HeaderLogo {
-    top: 45px;
     left: 0px;
+    top: 45px;
     width: 180px;
   }
 }
