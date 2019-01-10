@@ -1,0 +1,612 @@
+/* Body */
+body {
+    background-color: #000000;
+	color: white;
+	font-family: Lucida Console;
+}
+
+/* Header */
+.Header {
+    text-align: center;
+    position: rela1tive;
+	padding-top: 45px;
+}
+
+/* Header Logo */
+.HeaderLogo {
+	width: 210px;
+	position: absolute; 
+	left: 10px; 
+	top: 20px;
+	padding: 10px;
+}
+
+/* Adjust Header Logo size when below width 1100px */
+@media screen and (max-width: 1100px) {
+  .HeaderLogo {
+	width: 150px;
+  }
+}
+
+/* Adjust Header Logo size when below width 800px */
+@media screen and (max-width: 800px) {
+  .HeaderLogo {
+    width: 170px;
+  }
+}
+
+/* Header Text */
+.HeaderText {
+	font-size: 40px;
+	padding: 30px;
+	letter-spacing: 15px;
+}
+
+/* Adjust Header Text size when below width 1100px */
+@media screen and (max-width: 1100px) {
+  .HeaderText {
+    font-size: 20px;
+  }
+}
+
+/* Adjust Header Text size when below width 800px */
+@media screen and (max-width: 800px) {
+  .HeaderText {
+    color: black;
+  }
+}
+
+/* Header Social Media Linked Images */
+.HeaderSocial {
+	position: absolute; 
+	right: 10px; 
+	top: 105px;
+}
+
+/* Adjust Header Social relative to screen size (below width 1100px) */
+@media screen and (max-width: 1100px) {
+  .HeaderSocial {
+	top: 83px;
+  }
+}
+
+/* Adjust Header Social relative to screen size (below width 800px) */
+@media screen and (max-width: 800px) {
+  .HeaderSocial {
+	top: 65px;
+  }
+}
+
+/* Navbar */
+.Navbar {
+	padding-top: 45px;
+}
+
+/* Adjust Navbar to vertical when below 800px */
+@media screen and (max-width: 800px) {
+  .Navbar {
+    padding-top: 20px;
+  }
+}
+
+/* Navbar elements */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #cc0405;
+	overflow: hidden;
+}
+
+/* Start the list from the left */
+li {
+	float: left;
+}
+
+/* Move elements to the right of the list */
+.Left {
+	float: left;
+}
+
+.Right {
+	float: right;
+}
+
+/* Navbar */
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	letter-spacing: 3px;
+}
+
+/* Navbar hover */
+li a:hover:not(.Active) {
+	background-color: #af0304;
+}
+
+/* Navbar active */
+li a.Active {
+	background-color: #af0304;
+}
+
+/* Adjust navbar elements to the centre in vertical list when below width 592px */
+@media screen and (max-width: 698px) {
+  li, .Right {
+	float: none;
+  }
+}
+
+/* Center for image */
+.Centre {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: auto;
+	max-width: 1200px;
+}
+
+/* Image button placement */
+.ImageButton {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Actual Button */
+.ImageButton .Button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: #333333;
+	color: white;
+	font-size: 15px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+	opacity: 0.8;
+}
+
+/* Actual Button hover */
+.ImageButton .Button:hover {
+	opacity: 1;
+}
+
+/* Bar for splitting content on page */
+.Bar {
+	background-color: #cc0405;
+	color: white;
+	padding: 1px;
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 3px;
+	margin-top: 2px;
+}
+
+/* Container for images */
+.Container {
+	text-align:center;
+	position: relative;
+}
+
+/* Images in container */
+.Container img{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	display:inline-block;
+	width:20%;
+	margin:0 1% 0 1%;
+}
+  
+/* Adjust images to vertical when below widtrh 698px */
+@media screen and (max-width: 698px) {
+  .Container img {
+    width: 70%;
+  }
+}
+
+/* Fade image on hover */
+.ImgHover:hover {
+	opacity: 0.8;
+}
+
+/* Video Styling */
+.Video {
+	padding-top: 5px;
+	border: 1px solid black;
+	width: 100%;
+	height: 500px;
+}
+
+/* Page Footer */
+.Footer {
+	background-color: #cc0405;
+	color: white;
+	padding: 50px;
+	text-align: center;
+}
+
+/* Logo in footer */
+.FooterLogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width:500px;
+	padding-bottom: 10px;
+}
+
+/* Footer social media styling */
+.FooterSocial {
+	padding: 10px;
+}
+
+/* Small Text (Adjusts font to 10px for footer text) */
+.SmallText {
+	font-size: 10px;
+}
+
+/* Link styling default */
+a:link {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Link styling visited link */
+a:visited {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}	
+
+/* Link styling hovering on link */
+a:hover {
+	color: lightgray;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Link styling active link */
+a:active {
+	color: gray;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Album Container for Music page */
+.AlbumContainer {
+    margin: 10px;
+    overflow: hidden;
+}
+
+/* Image display */
+.Left img {
+    display: block;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	width: 395px;
+}
+
+/* Album Container content */
+.AlbumText {
+	
+}
+
+/* Album Container Title */
+.AlbumTitle {
+	background-color: #cc0405;
+	padding: 10px;
+	font-weight: bold;
+    font-size: 150%;
+}
+
+/* Album Container Title */
+.AlbumButton {
+	background-color: #cc0405;
+	padding: 10px;
+	font-weight: bold;
+	color: black; 
+    font-size: 100%;
+	border: 1px solid black;
+}
+
+/* Album Button hover */
+.AlbumButton:hover {
+	opacity: 0.9;
+}
+
+/* Album Button hover */
+.AlbumButton:active {
+	opacity: 0.8;
+}
+
+/* Album Songs Table */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #cc0405;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #cc0405;
+}
+
+/* Display Songs from Album 1 */
+#DisplaySongs1 {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 0px;
+	display: none;
+}
+
+/* Display Songs from Album 2 */
+#DisplaySongs2 {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 0px;
+	display: none;
+}
+
+/* Display Songs from Album 3 */
+#DisplaySongs3 {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 0px;
+	display: none;
+}
+
+/* Display Songs from Album 4 */
+#DisplaySongs4 {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 0px;
+	display: none;
+}
+
+/* Target Image for the Modal */
+.TargetImage {
+    border-radius: 1px;
+    transition: 0.2s;
+	cursor: pointer;
+}
+
+/* Fade image on hover */
+.TargetImage:hover {
+	opacity: 0.7;
+}
+
+/* Modal */
+.ModalImage {
+    display: none; 
+    left: 0;
+    top: 0;
+	position: fixed; 
+	padding-top: 75px; 
+    width: 100%;
+    height: 100%; 
+	z-index: 1; 
+    background-color: #000000; 
+    background-color: rgba(0,0,0,0.9); 
+	overflow: auto; 
+}
+
+/* Modal image styling */
+.ModalContent {
+	display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+/* Text to be used in modal */
+#ModalText {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0;
+    height: 100px;
+}
+
+/* Animation for Modal */
+.ModalContent, #ModalText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.3s;
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+/* Webkit zoom*/
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* Closing the modal */
+.CloseModal {
+    position: absolute;
+	color: #ffffff;
+	transition: 0.3s;
+    top: 20px;
+    right: 45px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Hover and focus styling */
+.CloseModal:hover,
+.CloseModal:focus {
+    color: #ffffff;
+    cursor: pointer;
+	text-decoration: none;
+}
+
+/* Adjust image on scren size below 700px width */
+@media only screen and (max-width: 700px){
+    .ModalContent {
+        width: 100%;
+    }
+}
+
+/* Styling image for gallery*/
+.GalleryImage {
+	width: 100%;
+	height: 100%;
+	max-width: 400px;
+	max-height: 240px;
+}
+
+/* Gallery Container for images */
+.GalleryContainer {
+	text-align:center;
+	position: relative;
+}
+
+/* Gallery Images in container */
+.GalleryContainer img{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	display:inline-block;
+	width:25%;
+	margin:0 1% 0 1%;
+}
+  
+/* Adjust gallery images to vertical when below widtrh 698px */
+@media screen and (max-width: 698px) {
+  .GalleryContainer img {
+    width: 70%;
+  }
+}
+
+/* Events */
+.Events {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+/* Each section in the event */
+.Section {
+    float:left;
+    width:31%;
+    margin:1% 1% 45px 1%;
+}
+
+/* Name of section */
+.Name {
+    position:absolute;
+    bottom:0px;
+	
+}
+
+/* Image in section */
+.Section img {
+    width: 100%;
+}
+
+/* Adjust font size with screen size */
+@media screen and (max-width: 938px) {
+  .Events {
+    font-size: 73%;
+  }
+}
+
+/* Bar for splitting content on page */
+.BarBlack {
+	background-color: #000000;
+	color: white;
+	padding: 1px;
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 3px;
+	margin-top: 2px;
+}
+
+.Spotify1 {
+	width: 300px;
+	height: 380px;
+}
+
+.Spotify2 {
+	width: 300px;
+	height: 330px;
+}
+
+.MarLeft {
+	margin-left: 9px;
+}
+
+
+.WhiteButton {
+	background-color: white;
+	border: 1px solid #cc0405;
+	padding: 20px;
+	font-family: Lucida Console;
+	font-weight: bold;
+}
+
+.BlackButton {
+	background-color: black;
+	border: 1px solid #cc0405;
+	padding: 20px;
+}
+
+.LightGreyButton {
+	background-color: lightgray;
+	border: 1px solid #cc0405;
+	padding: 20px;
+}
+
+.DarkGreyButton {
+	background-color: gray;
+	border: 1px solid #cc0405;
+	padding: 20px;
+}
+
+.RedButton {
+	background-color: #cc0405;
+	border: 1px solid #cc0405;
+	padding: 20px;
+	font-family: Lucida Console;
+	font-weight: bold;
+}
+
+.TshirtImage {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
