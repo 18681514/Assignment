@@ -212,7 +212,7 @@ li a.Active {
 /* Adjust images to vertical when below widtrh 698px */
 @media screen and (max-width: 698px) {
   .Container img {
-    width: 69%;
+    width: 72%;
   }
 }
 
